@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:checked="true"
+        android:icon="@drawable/ic_home_"
+        android:iconTint="@color/lightgreen"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_add_new"
+        android:icon="@drawable/ic_pulse"
+        android:iconTint="#DD2962EC"
+        android:title="@string/activity" />
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_dashboard"
+        android:iconTint="@color/purplemov"
+        android:title="@string/bottom_nav_dashboard" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:iconTint="@color/fadedRed"
+        android:title="@string/settings" />
+
+
+
+
+
+</menu>

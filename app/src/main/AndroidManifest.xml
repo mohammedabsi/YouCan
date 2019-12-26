@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.youcan">
+
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+
+        <activity android:name=".view.AddRecipeActivity">
+
+
+        </activity>
+        <activity android:name=".view.ChallengesActivity" />
+        <activity android:name=".view.ProfileActivity" />
+        <activity android:name=".view.Discover_SeeAll" />
+        <activity
+            android:name=".view.HomePageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.signup.SignUpActivity" >
+
+        </activity>
+        <activity android:name=".view.LoginActivity"></activity>
+        <activity android:name=".view.OnBoardActivity" />
+        <activity android:name=".view.personalInfo.PersonlInfoActivity" />
+        <activity android:name=".view.SplashScreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

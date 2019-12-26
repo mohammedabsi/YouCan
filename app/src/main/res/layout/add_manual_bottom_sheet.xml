@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.AddManualBottomSheet">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/textfield_background"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/padding_16dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/add_new"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/newmeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/padding_16dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/Meal_Name"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/name_meal_edt"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <EditText
+        android:id="@+id/name_meal_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/padding_16dp"
+
+        android:background="@drawable/textfield_background"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmeal" />
+
+    <TextView
+        android:id="@+id/newkcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/calories"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/newmeal"
+        app:layout_constraintTop_toBottomOf="@+id/name_meal_edt" />
+
+    <EditText
+        android:id="@+id/name_cal_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/textfield_background"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="@dimen/padding_16dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/nesdfdsgfsdwfat"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newkcal" />
+
+    <TextView
+        android:id="@+id/newfat"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/fat"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/name_fat_edt"
+        app:layout_constraintTop_toBottomOf="@+id/name_meal_edt" />
+
+    <TextView
+        android:id="@+id/nesdfdsgfsdwfat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/fat"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="20sp"
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toEndOf="@+id/name_meal_edt"
+        app:layout_constraintStart_toStartOf="@+id/name_meal_edt"
+        app:layout_constraintTop_toBottomOf="@+id/name_meal_edt" />
+
+    <EditText
+        android:id="@+id/name_fat_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textfield_background"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="@dimen/padding_16dp"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/nesdfdsgfsdwfat"
+        app:layout_constraintTop_toBottomOf="@+id/newfat" />
+
+
+    <TextView
+        android:id="@+id/newprotien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/protien"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/newkcal"
+        app:layout_constraintTop_toBottomOf="@+id/name_cal_edt" />
+
+    <EditText
+        android:id="@+id/name_protien_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_16dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/textfield_background"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/nesdfdsgfsdwfat"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newprotien" />
+
+    <TextView
+        android:id="@+id/newcarbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/carbs"
+        android:textColor="@color/darkGreyBlue"
+
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/newfat"
+        app:layout_constraintTop_toBottomOf="@+id/name_fat_edt" />
+
+    <EditText
+        android:id="@+id/name_carbs_edt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_16dp"
+        android:background="@drawable/textfield_background"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/nesdfdsgfsdwfat"
+        app:layout_constraintTop_toBottomOf="@+id/newprotien" />
+
+    <Button
+        android:id="@+id/question6_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_16dp"
+        android:background="@drawable/button_background"
+        android:text="@string/Submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/name_carbs_edt"
+        app:layout_constraintStart_toStartOf="@+id/name_protien_edt"
+        app:layout_constraintTop_toBottomOf="@+id/name_protien_edt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

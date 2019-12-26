@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "862830535064",
+    "firebase_url": "https://youcan-cf58d.firebaseio.com",
+    "project_id": "youcan-cf58d",
+    "storage_bucket": "youcan-cf58d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862830535064:android:627564fc5d8c38f6c80bed",
+        "android_client_info": {
+          "package_name": "com.example.youcan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862830535064-lrb4nqbrdiecar9nhpuc180gh7ucp227.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.youcan",
+            "certificate_hash": "ba6c88981af72e6af72ced53a10a3876799b5553"
+          }
+        },
+        {
+          "client_id": "862830535064-udrn3o71mk7uj7ae2e9t726bof2o9j6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7gDy-GBveTLjPrgJbCUQXM036LM7LTdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862830535064-udrn3o71mk7uj7ae2e9t726bof2o9j6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

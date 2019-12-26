@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/textfield_background"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/padding_16dp"
+        android:lineSpacingExtra="4sp"
+        android:text="@string/water"
+        android:textColor="@color/darkGreyBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:lottie_fileName="water_cup.json"
+         />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="300"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="73dp"
+        android:layout_marginBottom="45dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="600"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="900"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view9"
+        app:layout_constraintStart_toStartOf="@+id/view9" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="95dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x1200"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="1200"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view12"
+        app:layout_constraintStart_toStartOf="@+id/view12" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="120dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x1500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="1500"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view15"
+        app:layout_constraintStart_toStartOf="@+id/view15" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="85dp"
+        android:layout_marginBottom="145dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x1800"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="1800"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view18"
+        app:layout_constraintStart_toStartOf="@+id/view18" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="30dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="170dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="@+id/animation_view" />
+
+    <TextView
+        android:id="@+id/x2100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="2100"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21" />
+
+    <RadioGroup
+        android:id="@+id/Cupradiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/animation_view"
+        app:layout_constraintEnd_toStartOf="@+id/animation_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39">
+
+        <RadioButton
+            android:id="@+id/cupradiobutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiogroupbackground"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/ic_water"
+            android:drawableTint="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Cup"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <RadioButton
+            android:id="@+id/litreradiobutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiogroupbackground"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_water"
+            android:drawableTint="@android:color/holo_blue_bright"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="litre"
+
+            android:textColor="@android:color/holo_blue_bright" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/incremenetbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textfield_background"
+        android:backgroundTint="@color/lightgreen"
+        android:text="+"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/animation_view"
+        app:layout_constraintStart_toEndOf="@+id/cupcounter"
+        app:layout_constraintTop_toBottomOf="@+id/animation_view" />
+
+    <Button
+        android:id="@+id/decrementbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/textfield_background"
+        android:backgroundTint="@color/fadedRed"
+        android:text="-"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/incremenetbtn"
+        app:layout_constraintEnd_toStartOf="@+id/cupcounter"
+        app:layout_constraintStart_toStartOf="@+id/animation_view"
+        app:layout_constraintTop_toTopOf="@+id/incremenetbtn" />
+
+    <TextView
+        android:id="@+id/cupcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="0"
+
+        android:textColor="@color/darkblue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/decrementbtn"
+        app:layout_constraintEnd_toStartOf="@+id/incremenetbtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/decrementbtn"
+        app:layout_constraintTop_toTopOf="@+id/incremenetbtn" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#4a4444"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/Cupradiogroup"
+        app:layout_constraintTop_toBottomOf="@+id/decrementbtn"
+        android:text="your ideal water intake : " />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#4a4444"
+
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView50"
+        android:text="your Goal water intake : " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#4a4444"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView50"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
+        android:text="8 Cups" />
+
+    <TextView
+        android:id="@+id/cupcounter2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#4a4444"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintStart_toEndOf="@+id/textView50"
+        android:text="0" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="3sp"
+        android:textColor="#4a4444"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintStart_toEndOf="@+id/cupcounter2"
+        android:text=" Cups" />
+
+    <Button
+
+        android:id="@+id/update_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="@dimen/padding_16dp"
+
+        android:background="@drawable/button_background"
+        android:elevation="5dp"
+        android:text="@string/save"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

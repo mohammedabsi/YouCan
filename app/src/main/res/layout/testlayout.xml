@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:background="#fdf">
+
+
+
+    </Toolbar>
+
+    <RadioGroup
+        android:id="@+id/daily_weekly_button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiogroupbackground"
+            android:button="@drawable/ic_boy"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="male"
+            android:textColor="@color/radio_text_statelist" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/radiogroupbackground"
+            android:button="@drawable/ic_girl"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="female"
+
+            android:textColor="@color/radio_text_statelist" />
+
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_select_indicater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rotation="180"
+        android:src="@drawable/ic_down_arrow" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kg"
+        android:textColor="@color/darkGreyBlue"
+        android:textStyle="bold" />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/ruler_picker"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/white"
+        app:indicator_color="@android:color/black"
+        app:indicator_interval="16dp"
+        app:indicator_width="1dp"
+        app:max_value="205"
+        app:min_value="0"
+        app:notch_color="@android:color/white"
+
+        app:ruler_text_color="@android:color/black"
+        app:ruler_text_size="6sp">
+
+
+    </com.kevalpatel2106.rulerpicker.RulerValuePicker>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/textfield_background"
+        android:padding="5dp">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:ccp_showNameCode="false"
+            app:ccp_arrowColor="#8B8888"
+            app:ccpDialog_initialScrollToSelection="false"
+            app:ccpDialog_keyboardAutoPopup="false"
+            app:ccpDialog_searchEditTextTint="@color/lightgreen"
+            app:ccpDialog_showCloseIcon="true"
+            app:ccpDialog_showNameCode="true"
+            app:ccp_autoFormatNumber="false"
+            app:ccp_countryPreference="ps,sa" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#ACA8A8" />
+
+        <EditText
+            android:id="@+id/editText_carrierNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="9300000"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
